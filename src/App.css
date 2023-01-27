@@ -6,10 +6,15 @@
 }
 
 /*navigation menu*/
+nav {
+  position: fixed;
+  width: 100%;
+  display: flex;
+}
 /*navigation menu*/
 /*landing page*/
 
-.b-example-divider {
+.divider {
   height: 3rem;
   background-color: rgba(0, 0, 0, .1);
   border: solid rgba(0, 0, 0, .15);

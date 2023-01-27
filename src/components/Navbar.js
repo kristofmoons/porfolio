@@ -1,7 +1,7 @@
 export default function Navbar() {
     return (
         <>
-            <nav className="navbar navbar-expand-md navbar-dark bg-dark">
+            <nav className="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
                 <div className="container-fluid">
                     <a className="navbar-brand d-md-none" href="#">
                         <h2> KRISTOF MOONS</h2>
@@ -32,6 +32,8 @@ export default function Navbar() {
                     </div>
                 </div>
             </nav>
+
+            <div style={{height:"5vh"}}/>
 
 
         </>

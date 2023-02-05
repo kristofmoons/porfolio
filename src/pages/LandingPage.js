@@ -1,4 +1,5 @@
 import {useEffect, useState} from "react";
+import {Skills} from "../components/Skills";
 
 function ScrollDownSection() {
     function scroll() {
@@ -92,6 +93,8 @@ export default function LandingPage() {
                 </div>
             </div>
             <div className="divider"/>
+
+            <Skills/>
 
             <div className="container px-4 py-5" id="hanging-icons">
                 <h2 className="pb-2 border-bottom">Hanging icons</h2>

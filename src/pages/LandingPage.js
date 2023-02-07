@@ -74,24 +74,23 @@ export default function LandingPage() {
             </div>
 
             <header/>
-            <div style={{height:""}}/>
-            <div style={{
-                backgroundImage: "url('./images/achtergrond.jpg')", backgroundRepeat: "no-repeat",
-                backgroundSize: "cover", height: "auto"
-            }}>
-                <div className="px-4 py-5  text-center">
-                    <img className="d-block mx-auto mb-4" src="/images/avatar.jpg" alt=""
-                         width="160" height="160"/>
-                    <h1 className="display-5 fw-bold">Centered hero</h1>
-                    <div className="col-lg-6 mx-auto">
-                        <p className="lead mb-4">Quickly design and customize responsive mobile-first sites with
-                            Bootstrap, the world’s most popular front-end open source toolkit, featuring Sass
-                            variables and mixins, responsive grid system, extensive prebuilt components, and
-                            powerful JavaScript plugins.</p>
-                        <ScrollDownSection/>
-                    </div>
+            <div className="hero">
+                <div style={{height:"8rem"}}/>
+                <div className="px-4 py-3 my-3 text-center">
+                        <h1 className="display-5 fw-bold text-white">Kristof Moons</h1>
+                        <div className="col-lg-6 mx-auto my-5">
+                            <p className=" mb-4 text-white">Ik ben altijd gemotiveerd om iets nieuws bij te leren.
+                                Bij programmeren
+                                kan je kennis nooit
+                                groot genoeg zijn en is het voor mij een grote uitdaging nieuwe dingen te ontdekken. Dit
+                                vind ik dan ook super leuk aan programmeren, dingen creëren. Het ziet er dan super cool
+                                uit
+                                en geeft een machtig gevoel!</p>
+                           <ScrollDownSection/>
+                        </div>
                 </div>
             </div>
+
             <div className="divider"/>
 
             <Skills/>

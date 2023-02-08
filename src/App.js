@@ -5,6 +5,7 @@ import 'bootstrap/dist/js/bootstrap.bundle.min';
 import {BrowserRouter, Route, Routes} from "react-router-dom";
 import LandingPage from "./pages/LandingPage";
 import AchievementPage from "./pages/AchievementPage";
+import ContactPage from "./pages/ContactPage";
 
 function App() {
   return (
@@ -13,6 +14,8 @@ function App() {
               <Routes>
                   <Route path="/" element={<LandingPage/>}/>
                   <Route path="/projects" element={<AchievementPage/>}/>
+                  <Route path="/contact" element={<ContactPage/>}/>
+
 
               </Routes>
           </BrowserRouter>

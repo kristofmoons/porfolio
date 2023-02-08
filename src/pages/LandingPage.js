@@ -49,16 +49,16 @@ export default function LandingPage() {
                         <div className="collapse navbar-collapse" id="navbarSupportedContent">
                             <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
                                 <li className="nav-item">
-                                    <a className="nav-link" aria-current="page" href="#">Home</a>
+                                    <a className="nav-link" aria-current="page" href="/">Home</a>
                                 </li>
                                 <li className="nav-item">
-                                    <a className="nav-link" href="#">Portfolio</a>
+                                    <a className="nav-link" href="/portfolio">Portfolio</a>
                                 </li>
                                 <li className="nav-item">
-                                    <a className="nav-link" href="#">Cv</a>
+                                    <a className="nav-link" href="/cv">Cv</a>
                                 </li>
                                 <li className="nav-item">
-                                    <a className="nav-link" href="#">Contact me</a>
+                                    <a className="nav-link" href="/contact">Contact me</a>
                                 </li>
                             </ul>
                         </div>

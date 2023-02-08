@@ -1,10 +1,9 @@
-import {Col} from "react-bootstrap";
 
-function Skill(){
+function Skill(props){
     return<div className={"col-md-4"}>
         <div className="card px-2 my-2 ">
             <div className="card-body">
-                <h5 className="card-title">Card title</h5>
+                <h5 className="card-title">{props.language}</h5>
                 <div className="progress" >
                     <div className="progress-bar" style={{width:"75%"}} role="progressbar" aria-valuemin="0"
                          aria-valuemax="100"></div>
@@ -22,18 +21,17 @@ export function Skills(){
 
             <div className="row">
 
+                <Skill language={"HTML/CSS"}/>
 
-                <Skill/>
+                <Skill language={"JS"}/>
 
-                <Skill/>
+                <Skill language={"JAVA"}/>
 
-                <Skill/>
+                <Skill language={"SQL"}/>
 
-                <Skill/>
+                <Skill language={"Git"}/>
 
-                <Skill/>
-
-                <Skill/>
+                <Skill language={"ReactJS"}/>
 
             </div>
         </div>

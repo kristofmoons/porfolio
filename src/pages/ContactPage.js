@@ -1,5 +1,9 @@
+import Navbar from "../components/Navbar";
+
 export default function ContactPage(){
  return(
+     <>
+     <Navbar/>
      <div className="container">
          <div className="contact__wrapper shadow-lg mt-n9">
              <div className="row no-gutters">
@@ -82,6 +86,6 @@ export default function ContactPage(){
              </div>
          </div>
      </div>
-
+</>
  );
 }

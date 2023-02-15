@@ -99,3 +99,10 @@ nav {
   }
 }
 /*scroll down button */
+
+.box::after{
+  position: absolute;
+  content: '';
+  border-top: 100vh solid cornflowerblue;
+border-right:100vh solid transparent;
+width: 0;}

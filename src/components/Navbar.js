@@ -29,7 +29,7 @@ export default function Navbar() {
                 </div>
             </nav>
 
-            <div style={{height:"5vh"}}/>
+            <div style={{height:"6rem"}}/>
 
 
         </>

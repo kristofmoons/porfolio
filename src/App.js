@@ -6,6 +6,7 @@ import {BrowserRouter, Route, Routes} from "react-router-dom";
 import LandingPage from "./pages/LandingPage";
 import AchievementPage from "./pages/AchievementPage";
 import ContactPage from "./pages/ContactPage";
+import CvPage from "./pages/CvPage";
 
 function App() {
   return (
@@ -15,6 +16,8 @@ function App() {
                   <Route path="/" element={<LandingPage/>}/>
                   <Route path="/portfolio" element={<AchievementPage/>}/>
                   <Route path="/contact" element={<ContactPage/>}/>
+                  <Route path="/cv" element={<CvPage/>}/>
+
 
 
               </Routes>

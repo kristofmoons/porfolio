@@ -41,7 +41,7 @@ export default function LandingPage() {
                 <nav className="navbar navbar-expand-md navbar-dark fixed-top"
                      style={{backgroundColor: navColor, height: navSize, transition: "all 1s", borderBottom: borderColor}}>
                     <div className="container-fluid">
-                        <a className="navbar-brand" href="#">Kristof Moons</a>
+                        <a className="navbar-brand" href="/">Kristof Moons</a>
                         <button className="navbar-toggler" type="button" data-bs-toggle="collapse"
                                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                                 aria-expanded="false" aria-label="Toggle navigation">

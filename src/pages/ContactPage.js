@@ -4,7 +4,9 @@ export default function ContactPage(){
  return(
      <>
      <Navbar/>
-     <div className="container">
+         <div style={{height:"6rem"}}/>
+
+         <div className="container">
          <div className="contact__wrapper shadow-lg mt-n9">
              <div className="row no-gutters">
                  <div className="col-lg-5 contact-info__wrapper gradient-brand-color p-5 order-lg-2">

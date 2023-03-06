@@ -10,6 +10,7 @@ export default function AchievementPage() {
 return (
     <>
         <Navbar/>
+        <div style={{height:"6rem"}}/>
 
         <div className="switch-holder mx-4">
             <div className="switch-label">

@@ -1,28 +1,40 @@
 function ImageLeft() {
 
     return (
-        <div className="col-12">
-            <div className="row align-items-center gy-3 gy-md-0 gx-xl-5">
-                <div className="col-xs-12 col-md-6">
-                    <div className="img-wrapper position-relative hcf-transform">
-                        <a href="#!">
-                                        <span
-                                            className="badge rounded-pill text-bg-warning position-absolute top-10px start-10px">Sports</span>
-                            <img
-                                className="img-fluid rounded w-100 hcf-of-cover hcf-op-center hcf-ih-250 hcf-ih-md-400"
-                                loading="lazy" src="/images/foto.JPG" alt=""/>
-                        </a>
-                    </div>
+        <div className="container py-5">
+            <div className="row align-items-center mb-5">
+                <div className="col-lg-6 order-2 order-lg-1"><i className="fa fa-bar-chart fa-2x mb-3 text-primary"></i>
+                    <h2 className="font-weight-light">XP DAYS</h2>
+                    <p className="font-italic text-muted mb-4">
+                        Een project dat ik in team moest maken met 3 andere klasgenoten.
+                        de opdracht was een webapplicatie maken voor de studenten van Media en Entertainment Business.
+                        hun missie was om een platform te creeëren die vreemdelingen helpt makkelijker in contact te
+                        komen met
+                        hun buurtbewoners. We hebben gebruikt gemaakt van java spring om de applicatie tot leven te
+                        brengen.
+                        U kunt de site bezoeken maar het kan zijn dat het even nodig zal hebben om op te starten.
+                    </p>
+
+
                 </div>
-                <div className="col-xs-12 col-md-6">
-                    <div>
-                        <p className="text-secondary mb-1">Nov 11, 2022</p>
-                        <h2 className="h1 mb-3"><a className="link-dark text-decoration-none" href="#!">Useful
-                            Skateboarding Tips For Beginners</a></h2>
-                        <p className="mb-4">Learning how to skateboard can be a simultaneously exciting and
-                            terrifying experience. Explore the 20 top tips for beginner skaters.</p>
-                        <a className="btn btn-primary" href="#!" target="_self">Read More</a>
+                <div className="col-lg-5 px-5 mx-auto order-1 order-lg-2">
+
+                    <div className="img-fluid mb-4 mb-lg-0">
+                        <div id="carouselExampleIndicators" className="carousel slide" data-bs-ride="carousel">
+                            <div className="carousel-inner">
+                                <div className="carousel-item active">
+                                    <img src="/images/projecten/HY/1.png" className="d-block w-100" alt="..."/>
+                                </div>
+                                <div className="carousel-item">
+                                    <img src="/images/projecten/HY/3.png" className="d-block w-100" alt="..."/>
+                                </div>
+                                <div className="carousel-item">
+                                    <img src="/images/projecten/HY/2.png" className="d-block w-100" alt="..."/>
+                                </div>
+                            </div>
+                        </div>
                     </div>
+
                 </div>
             </div>
         </div>
@@ -31,47 +43,58 @@ function ImageLeft() {
 
 function ImageRight() {
     return (
-        <div className="col-12">
-            <div className="row align-items-center flex-row-reverse gy-3 gy-md-0 gx-xl-5">
-                <div className="col-xs-12 col-md-6">
-                    <div className="img-wrapper position-relative hcf-transform">
-                        <a href="#!">
-                                        <span
-                                            className="badge rounded-pill text-bg-warning position-absolute top-10px end-10px">Travel</span>
-                            <img
-                                className="img-fluid rounded w-100 hcf-of-cover hcf-op-center hcf-ih-250 hcf-ih-md-400"
-                                loading="lazy" src="/images/foto.JPG" alt=""/>
-                        </a>
+        <div className="container py-5">
+            <div className="row align-items-center">
+                <div className="col-lg-5 px-5 mx-auto">
+
+                    <div className="img-fluid mb-4 mb-lg-0">
+                        <div id="carouselExampleIndicators" className="carousel slide" data-bs-ride="carousel">
+                            <div className="carousel-inner">
+                                <div className="carousel-item active">
+                                    <img src="/images/projecten/repairaza/1.png" className="d-block w-100" alt="..."/>
+                                </div>
+                                <div className="carousel-item">
+                                    <img src="/images/projecten/repairaza/2.png" className="d-block w-100" alt="..."/>
+                                </div>
+                                <div className="carousel-item">
+                                    <img src="/images/projecten/repairaza/3.png" className="d-block w-100" alt="..."/>
+                                </div>
+                            </div>
+                        </div>
                     </div>
+
                 </div>
-                <div className="col-xs-12 col-md-6">
-                    <div>
-                        <p className="text-secondary mb-1">Oct 9, 2022</p>
-                        <h2 className="h1 mb-3"><a className="link-dark text-decoration-none" href="#!">Strange
-                            Facts About Hot Air Balloons</a></h2>
-                        <p className="mb-4">You think the Wright Brothers were impressive? Hot air balloons
-                            were carrying people through the air almost a century before the Wright Brothers
-                            were even born.</p>
-                        <a className="btn btn-primary" href="#!" target="_self">Read More</a>
-                    </div>
+                <div className="col-lg-6"><i className="fa fa-leaf fa-2x mb-3 text-primary"></i>
+                    <h2 className="font-weight-light">Repairaza</h2>
+                    <p className="font-italic text-muted mb-4">
+                        Dit project was om ons aan te leren hoe java spring werkt, we mochten zelf een thema kiezen
+                        en moesten dit proberen te realiseren. Omdat men ouders graag naar restaureer programma's op tv
+                        kijken had ik besloten om een site te maken waar u uw oude spullen kon brengen om er nieuw leven
+                        in te blazen. U kunt de site bezoeken maar het kan zijn dat het even nodig zal hebben om op te
+                        starten.
+                    </p>
+
                 </div>
             </div>
         </div>
     );
 }
 
-export function Internships() {
 
+export default function Internships(){
+    return(<>
+            <div className="container">
+                <h1 className="font-weight-light text-center text-lg-left mt-4 mb-0">Experiences</h1>
+                <hr className="mt-2 mb-5"/>
+            </div>
 
-    return <section className="bg-light py-5 py-xl-6">
-        <div className="container overflow-hidden">
-            <div className="row gy-5">
-
+            <div className="py-5">
                 <ImageLeft/>
                 <ImageRight/>
 
 
             </div>
-        </div>
-    </section>
+        </>
+
+    );
 }

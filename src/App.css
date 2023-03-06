@@ -107,19 +107,11 @@ nav {
   border-radius: 10px;
   margin-bottom: 30px;
   box-shadow: -8px -8px 15px rgba(255,255,255,.7),
-  10px 10px 10px rgba(0,0,0, .3),
+  10px 10px 10px rgba(0,0,0, .1),
   inset 8px 8px 15px rgba(255,255,255,.7),
-  inset 10px 10px 10px rgba(0,0,0, .3);
+  inset 10px 10px 10px rgba(0,0,0, .1);
   justify-content: space-between;
   align-items: center;
-}
-
-.switch-label {
-  width: 150px;
-}
-
-.switch-label i {
-  margin-right: 5px;
 }
 
 .switch-toggle {
@@ -147,7 +139,7 @@ nav {
 
 .switch-toggle input[type="checkbox"] + label::before {
   position: absolute;
-  content: 'OFF';
+  content: '->';
   font-size: 13px;
   text-align: center;
   line-height: 25px;
@@ -164,7 +156,7 @@ nav {
 
 .switch-toggle input[type="checkbox"]:checked + label::before {
   left: 50%;
-  content: 'ON';
+  content: '<-';
   color: #fff;
   background-color: cornflowerblue;
   box-shadow: -3px -3px 5px rgba(255,255,255,.5),

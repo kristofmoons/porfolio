@@ -1,11 +1,6 @@
-export default function Projects(){
- return(<>
-     <div className="container">
-         <h1 className="font-weight-light text-center text-lg-left mt-4 mb-0">Projecten</h1>
-         <hr className="mt-2 mb-5"/>
-     </div>
+function ImageLeft() {
 
-    <div className="py-5">
+    return (
         <div className="container py-5">
             <div className="row align-items-center mb-5">
                 <div className="col-lg-6 order-2 order-lg-1"><i className="fa fa-bar-chart fa-2x mb-3 text-primary"></i>
@@ -46,7 +41,11 @@ export default function Projects(){
                 </div>
             </div>
         </div>
+    );
+}
 
+function ImageRight() {
+    return (
         <div className="container py-5">
             <div className="row align-items-center">
                 <div className="col-lg-5 px-5 mx-auto">
@@ -83,6 +82,22 @@ export default function Projects(){
                 </div>
             </div>
         </div>
+    );
+}
+
+
+export default function Projects(){
+ return(<>
+     <div className="container">
+         <h1 className="font-weight-light text-center text-lg-left mt-4 mb-0">Projecten</h1>
+         <hr className="mt-2 mb-5"/>
+     </div>
+
+    <div className="py-5">
+        <ImageLeft/>
+        <ImageRight/>
+
+
     </div>
 </>
 

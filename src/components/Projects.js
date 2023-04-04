@@ -93,12 +93,10 @@ export default function Projects(){
          <hr className="mt-2 mb-5"/>
      </div>
 
-    <div className="py-5">
         <ImageLeft/>
         <ImageRight/>
 
 
-    </div>
 </>
 
 );

@@ -84,16 +84,14 @@ function ImageRight() {
 export default function Internships(){
     return(<>
             <div className="container">
-                <h1 className="font-weight-light text-center text-lg-left mt-4 mb-0">Experiences</h1>
+                <h1 className="font-weight-light text-center text-lg-left mt-4 mb-0">Ervaringen</h1>
                 <hr className="mt-2 mb-5"/>
             </div>
 
-            <div className="py-5">
                 <ImageLeft/>
                 <ImageRight/>
 
 
-            </div>
         </>
 
     );

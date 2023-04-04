@@ -7,29 +7,36 @@ export default function AchievementPage() {
 
     const [toggle, setToggle] = useState(true)
 
-return (
-    <>
-        <Navbar/>
-        <div style={{height:"6rem"}}/>
+    return (
+        <>
+            <Navbar/>
+            <div style={{height: "6rem"}}/>
 
-        <div className="switch-holder mx-4">
-            <div className="switch-label">
-                <span>Projects</span>
-            </div>
-            <div className="switch-toggle">
-                <input type="checkbox" id="bluetooth"  onChange={() => setToggle(!toggle)}/>
-                    <label htmlFor="bluetooth"/>
-            </div>
-            <div className="switch-label">
-                <span>Experiences</span>
-            </div>
-        </div>
+            <div className="container">
+                <div className="row align-items-center">
 
-        {toggle? <Projects/>
-            :
-        <Internships/>
-        }
+                    <div className="switch-holder px-4">
+                        <div className="switch-label">
+                            <span>Projecten</span>
+                        </div>
+                        <div className="switch-toggle">
+                            <input type="checkbox" id="bluetooth" onChange={() => setToggle(!toggle)}/>
+                            <label htmlFor="bluetooth"/>
+                        </div>
+                        <div className="switch-label">
+                            <span>Ervaringen</span>
+                        </div>
+                    </div>
 
-    </>
-);
+                    {toggle ? <Projects/>
+                        :
+                        <Internships/>
+                    }
+
+                </div>
+            </div>
+
+
+        </>
+    );
 }

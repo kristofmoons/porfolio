@@ -5,7 +5,7 @@ function Skill(props){
             <div className="card-body">
                 <h5 className="card-title">{props.language}</h5>
                 <div className="progress" >
-                    <div className="progress-bar" style={{width:"75%"}} role="progressbar" aria-valuemin="0"
+                    <div className="progress-bar" style={{width:props.lvl}} role="progressbar" aria-valuemin="0"
                          aria-valuemax="100"></div>
                 </div>
             </div>
@@ -16,22 +16,22 @@ function Skill(props){
 export function Skills(){
     return <>
 
-        <div className="container px-4 py-5" id="hanging-icons">
-            <h2 className="pb-2 border-bottom">Hanging icons</h2>
+        <div className="container px-4 pb-5" id="hanging-icons">
+            <h2 className="pb-2 border-bottom">Skills</h2>
 
             <div className="row">
 
-                <Skill language={"HTML/CSS"}/>
+                <Skill language={"HTML/CSS"} lvl={"85%"}/>
 
-                <Skill language={"JS"}/>
+                <Skill language={"JS"} lvl={"75%"}/>
 
-                <Skill language={"JAVA"}/>
+                <Skill language={"JAVA"} lvl={"70%"}/>
 
-                <Skill language={"SQL"}/>
+                <Skill language={"SQL"} lvl={"65%"}/>
 
-                <Skill language={"Git"}/>
+                <Skill language={"Flutter"} lvl={"70%"}/>
 
-                <Skill language={"ReactJS"}/>
+                <Skill language={"ReactJS"} lvl={"85%"}/>
 
             </div>
         </div>

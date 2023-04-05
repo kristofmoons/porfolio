@@ -1,6 +1,8 @@
-function ImageLeft() {
+function ImageLeftHy() {
 
     return (
+        <div className="border px-4 rounded mx-2 mb-5">
+
         <div className="container py-5">
             <div className="row align-items-center mb-5">
                 <div className="col-lg-6 order-2 order-lg-1"><i className="fa fa-bar-chart fa-2x mb-3 text-primary"></i>
@@ -12,12 +14,7 @@ function ImageLeft() {
                         komen met
                         hun buurtbewoners. We hebben gebruikt gemaakt van java spring om de applicatie tot leven te
                         brengen.
-                        U kunt de site bezoeken maar het kan zijn dat het even nodig zal hebben om op te starten.
                     </p>
-
-                    <a className="btn btn-outline-dark btn-lg w-100" href="https://hy-skw-team5.herokuapp.com/home">Bezoek
-                        me</a>
-
 
                 </div>
                 <div className="col-lg-5 px-5 mx-auto order-1 order-lg-2">
@@ -41,11 +38,14 @@ function ImageLeft() {
                 </div>
             </div>
         </div>
+        </div>
     );
 }
 
-function ImageRight() {
+function ImageRightRepairaza() {
     return (
+        <div className="border px-4 rounded mx-2 mb-5">
+
         <div className="container py-5">
             <div className="row align-items-center">
                 <div className="col-lg-5 px-5 mx-auto">
@@ -73,12 +73,37 @@ function ImageRight() {
                         Dit project was om ons aan te leren hoe java spring werkt, we mochten zelf een thema kiezen
                         en moesten dit proberen te realiseren. Omdat men ouders graag naar restaureer programma's op tv
                         kijken had ik besloten om een site te maken waar u uw oude spullen kon brengen om er nieuw leven
-                        in te blazen. U kunt de site bezoeken maar het kan zijn dat het even nodig zal hebben om op te
-                        starten.
+                        in te blazen.
                     </p>
-                    <a className="btn btn-outline-dark btn-lg w-100" href="https://repairaza.herokuapp.com/">Bezoek
-                        me</a>
 
+                </div>
+            </div>
+        </div>
+        </div>
+    );
+}
+
+function ImageTasteTrail() {
+
+    return (
+        <div className="border px-4 rounded mx-2 mb-5">
+
+            <div className="container py-5">
+                <div className="row align-items-center mb-5">
+                    <div className="col-lg-6 order-2 order-lg-1"><i className="fa fa-bar-chart fa-2x mb-3 text-primary"></i>
+                        <h2 className="font-weight-light">Taste Trail</h2>
+                        <p className="font-italic text-muted mb-4">
+                            Voor een van mijn laatste schoolprojecten heb ik een receptenapp gemaakt met Flutter,
+                            wat mijn eerste ervaring was met deze toolkit. Het was een uitdagend
+                            project, maar ook een geweldige kans om nieuwe vaardigheden te leren en uit te breiden.
+                            Door deze app te maken, kon ik meer leren over de Flutter-widgets en -lay-outs. Met deze kennis ben ik van plan om meer apps te maken en mijn vaardigheden verder
+                            te ontwikkelen. Ik ben erg blij met het resultaat van mijn werk en kan niet wachten om het met anderen te delen.
+                        </p>
+
+                    </div>
+                    <div className="col-lg-5 px-5 mx-auto ">
+                        <img src="/images/projecten/ReceptenApp/cdsds.svg" className="img-fluid mb-4 mb-lg-0" alt="Project image" />
+                    </div>
                 </div>
             </div>
         </div>
@@ -92,9 +117,9 @@ export default function Projects(){
          <h1 className="font-weight-light text-center text-lg-left mt-4 mb-0">Projecten</h1>
          <hr className="mt-2 mb-5"/>
      </div>
-
-        <ImageLeft/>
-        <ImageRight/>
+<ImageTasteTrail/>
+        <ImageLeftHy/>
+        <ImageRightRepairaza/>
 
 
 </>

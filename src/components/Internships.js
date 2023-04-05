@@ -70,8 +70,6 @@ export default function Internships() {
 
             <ImageLeft/>
             {/*<ImageRight/>*/}
-
-
         </>
 
     );

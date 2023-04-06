@@ -20,11 +20,15 @@ export default function LandingPage() {
     const [navSize, setnavSize] = useState("10rem");
     const [navColor, setnavColor] = useState("transparent");
     const [borderColor, setBorderColor] = useState("transparent");
+    const [color, setColor] = useState("transparent");
+
 
     const listenScrollEvent = () => {
         window.scrollY > 10 ? setnavColor("#212121") : setnavColor("transparent");
         window.scrollY > 10 ? setnavSize("auto") : setnavSize("8rem");
         window.scrollY > 10 ? setBorderColor("3px solid cornflowerblue") : setBorderColor("0px solid transparent");
+        window.scrollY > 10 ? setColor("#fff") : setColor("transparent");
+
 
     };
     useEffect(() => {
@@ -41,7 +45,7 @@ export default function LandingPage() {
                 <nav className="navbar navbar-expand-md navbar-dark fixed-top"
                      style={{backgroundColor: navColor, height: navSize, transition: "all 1s", borderBottom: borderColor}}>
                     <div className="container-fluid">
-                        <a className="navbar-brand" href="/">Kristof Moons</a>
+                        <a className="navbar-brand" style={{color:color}} href="/">Kristof Moons</a>
                         <button className="navbar-toggler" type="button" data-bs-toggle="collapse"
                                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                                 aria-expanded="false" aria-label="Toggle navigation">

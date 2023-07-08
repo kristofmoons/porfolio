@@ -100,22 +100,20 @@ nav {
 }
 /*scroll down button */
 
-
 .switch-holder {
   display: flex;
   padding: 10px 20px;
   border-radius: 10px;
   margin-bottom: 30px;
-  box-shadow: -8px -8px 15px rgba(255,255,255,.7),
-  10px 10px 10px rgba(0,0,0, .1),
-  inset 8px 8px 15px rgba(255,255,255,.7),
-  inset 10px 10px 10px rgba(0,0,0, .1);
   justify-content: space-between;
   align-items: center;
+  background-color: #f8f9fa;
+  border: 1px solid #dee2e6;
 }
 
 .switch-toggle {
   height: 40px;
+  position: relative;
 }
 
 .switch-toggle input[type="checkbox"] {
@@ -132,40 +130,43 @@ nav {
   border-radius: 20px;
   margin: 0;
   cursor: pointer;
-  box-shadow: inset -8px -8px 15px rgba(255,255,255,.6),
-  inset 10px 10px 10px rgba(0,0,0, .25);
-
+  background-color: #fff;
+  transition: background-color 0.3s ease-in-out;
+  border: 1px solid #ced4da;
 }
 
 .switch-toggle input[type="checkbox"] + label::before {
   position: absolute;
-  content: '->';
-  font-size: 13px;
-  text-align: center;
-  line-height: 25px;
-  top: 8px;
+  content: "";
+  top: 50%;
+  transform: translateY(-50%);
   left: 8px;
   width: 45px;
   height: 25px;
   border-radius: 20px;
-  background-color: #d1dad3;
-  box-shadow: -3px -3px 5px rgba(255,255,255,.5),
-  3px 3px 5px rgba(0,0,0, .25);
+  background-color: #e9ecef;
   transition: .3s ease-in-out;
+  background-image: url("../public/images/svg/arrowright.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .switch-toggle input[type="checkbox"]:checked + label::before {
-  left: 50%;
-  content: '<-';
+  left: calc(100% - 55px);
+  content: "";
   color: #fff;
-  background-color: cornflowerblue;
-  box-shadow: -3px -3px 5px rgba(255,255,255,.5),
-  3px 3px 5px cornflowerblue;
+  background-image: url("../public/images/svg/arrowleft.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
-.box::after{
+
+.box::after {
   position: absolute;
   content: '';
-  border-top: 100vh solid cornflowerblue;
-border-right:100vh solid transparent;
-width: 0;}
+  border-top: 100vh solid #007bff;
+  border-right: 100vh solid transparent;
+  width: 0;
+}

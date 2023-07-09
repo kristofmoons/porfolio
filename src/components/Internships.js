@@ -1,7 +1,7 @@
 function ImageRight() {
     return (
         <div className="border px-4 rounded mx-2 my-3">
-            <div className="container pt-4">
+            <div className="container py-1">
                 <div className="row align-items-center mb-3">
                     <div className="col-lg-6 order-2 order-lg-1 overflow-auto">
                         <h2 className="font-weight-light">Stage bij XP DAYS</h2>
@@ -30,7 +30,7 @@ function ImageRight() {
 function ImageLeft() {
     return (
         <div className="border px-4 rounded mx-2 my-3">
-            <div className="container py-5">
+            <div className="container">
                 <div className="row align-items-center">
                     <div className="col-lg-5 px-5 mx-auto">
                         <img src="/images/experiences/peopleware.png" className="img-fluid mb-4 mb-lg-0" alt="Project image" />
@@ -51,11 +51,12 @@ function ImageLeft() {
 
 
 
+
 export default function Internships() {
     return (<>
             <div className="container">
                 <h1 className="font-weight-light text-center text-lg-left mt-4 mb-0">Ervaringen</h1>
-                <hr className="mt-2 mb-3"/>
+                <hr className="mt-2 mb-4"/>
             </div>
 
             <ImageLeft/>

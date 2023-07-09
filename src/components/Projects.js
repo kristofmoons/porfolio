@@ -1,7 +1,7 @@
 function ImageLeftHy() {
 
     return (
-        <div className="border px-4 rounded mx-2 mb-5">
+        <div className="border px-4 rounded mx-2 my-3">
 
         <div className="container py-5">
             <div className="row align-items-center mb-5">
@@ -44,7 +44,7 @@ function ImageLeftHy() {
 
 function ImageRightRepairaza() {
     return (
-        <div className="border px-4 rounded mx-2 mb-5">
+        <div className="border px-4 rounded mx-2 my-3">
 
         <div className="container py-5">
             <div className="row align-items-center">
@@ -86,7 +86,7 @@ function ImageRightRepairaza() {
 function ImageTasteTrail() {
 
     return (
-        <div className="border px-4 rounded mx-2 mb-5">
+        <div className="border px-4 rounded mx-2 my-3">
 
             <div className="container py-5">
                 <div className="row align-items-center mb-5">
@@ -115,7 +115,7 @@ export default function Projects(){
  return(<>
      <div className="container">
          <h1 className="font-weight-light text-center text-lg-left mt-4 mb-0">Projecten</h1>
-         <hr className="mt-2 mb-5"/>
+         <hr className="mt-2 mb-4"/>
      </div>
 <ImageTasteTrail/>
         <ImageLeftHy/>

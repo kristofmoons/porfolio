@@ -1,12 +1,14 @@
+import React, { useState } from "react";
 import Navbar from "../components/Navbar";
 import Internships from "../components/Internships";
 import Projects from "../components/Projects";
-import {useState} from "react";
+import {CSSTransition, SwitchTransition} from "react-transition-group";
 
 
 export default function AchievementPage() {
+    const [toggle, setToggle] = useState(true);
 
-    const [toggle, setToggle] = useState(true)
+
 
     return (
         <>
@@ -16,29 +18,46 @@ export default function AchievementPage() {
 
             <div className="container">
                 <div className="row align-items-center">
-
-                    <div className="switch-holder px-4">
-                        <div className="switch-label">
-                            <span>Projecten</span>
-                        </div>
-                        <div className="switch-toggle">
-                            <input type="checkbox" id="bluetooth" onChange={() => setToggle(!toggle)} />
-                            <label htmlFor="bluetooth" />
-                        </div>
-                        <div className="switch-label">
-                            <span>Ervaringen</span>
-                        </div>
-                    </div>
-
                     <div className="col">
-                        {toggle ? <Projects /> : <Internships />}
-                    </div>
+                        <div className="switch-holder px-4">
+                            <div className="switch-label">
+                                <span>Projecten</span>
+                            </div>
+                            <div className="switch-toggle">
+                                <input
+                                    type="checkbox"
+                                    id="bluetooth"
+                                    checked={!toggle}
+                                    onChange={() => setToggle(!toggle)}
+                                />
+                                <label htmlFor="bluetooth" />
+                            </div>
+                            <div className="switch-label">
+                                <span>Ervaringen</span>
+                            </div>
+                        </div>
 
+                        <SwitchTransition mode="out-in">
+                            <CSSTransition
+                                key={toggle ? "projects" : "internships"}
+                                classNames="fade"
+                                timeout={300}
+                            >
+                                {toggle ? (
+                                    <div className="transition-container">
+                                        <Projects />
+                                    </div>
+                                ) : (
+                                    <div className="transition-container">
+                                        <Internships />
+                                    </div>
+                                )}
+                            </CSSTransition>
+                        </SwitchTransition>
+
+                    </div>
                 </div>
             </div>
-
-
-
         </>
     );
 }

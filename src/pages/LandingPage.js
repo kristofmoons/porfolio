@@ -63,7 +63,7 @@ export default function LandingPage() {
                                     <a className="nav-link" href="/cv">Cv</a>
                                 </li>
                                 <li className="nav-item">
-                                    <a className="nav-link" href="/contact">Contact me</a>
+                                    <a className="nav-link" href="/contact">Contact</a>
                                 </li>
                             </ul>
                         </div>

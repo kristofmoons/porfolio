@@ -11,17 +11,15 @@ import CvPage from "./pages/CvPage";
 function App() {
   return (
 
-          <BrowserRouter>
-              <Routes>
-                  <Route path="/" element={<LandingPage/>}/>
-                  <Route path="/portfolio" element={<AchievementPage/>}/>
-                  <Route path="/contact" element={<ContactPage/>}/>
-                  <Route path="/cv" element={<CvPage/>}/>
-
-
-
-              </Routes>
-          </BrowserRouter>
+    <BrowserRouter>
+    <Routes>
+      <Route path="/" element={<LandingPage />} />
+      <Route path="/portfolio" element={<AchievementPage />} />
+      <Route path="/contact" element={<ContactPage />} />
+      <Route path="/cv" element={<CvPage />} />
+    </Routes>
+  </BrowserRouter>
+  
   );
 }
 

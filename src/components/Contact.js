@@ -61,7 +61,7 @@ export function ContactInfo() {
                     </li>
                     <li className="mb-2">
                         <h4 className="contact-info__title">Telefoon:</h4>
-                        <i className="fas fa-phone"></i> +324 68 16 70 53
+                        <i className="fas fa-phone"></i> +32 4 681 670 53
                     </li>
                     <li>
                         <h4 className="contact-info__title">Adres:</h4>

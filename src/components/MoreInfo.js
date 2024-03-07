@@ -21,6 +21,8 @@ function Info(props) {
           <h2 style={{ marginLeft: "10px" }}>{props.title}</h2>
         </div>
         <p>{props.text}</p>
+        <button class="button-visit" role="button" onClick={handleRedirect}>Bezoek me</button>
+
       </div>
     </div>
   );
@@ -36,14 +38,13 @@ export function MoreInfo() {
           link={"https://github.com/kristofmoons"}
           title={"Github"}
           text={
-            "Github is een onmisbaar platform voor mij als ontwikkelaar. " +
-            "Ik gebruik Github om mijn code te delen en samen te werken met andere ontwikkelaars aan projecten, " +
-            "waardoor ik effectiever kan communiceren en werken in teams."
+            "Github is voor mij van onschatbare waarde om mijn code veilig te bewaren. " +
+            "Door gebruik te maken van Github vermijd ik het verlies van code en profiteer ik van versiebeheer en handig issue-management, wat het tot een essentieel onderdeel maakt van mijn ontwikkelworkflow."
           }
         />
         <Info
           logoSrc={"/images/thomasmore.jpg"}
-          link={"https://www.thomasmore.be/opleidingen/graduaat/programmeren-dag-avondonderwijs?gclid=Cj0KCQjw27mhBhC9ARIsAIFsETFtTyVqg0IqSvmMGdQLPu97_YZZiYdgi-rBnCmntQnke6rt7vxxWVMaAmHVEALw_wcB"}
+          link={"https://thomasmore.be/nl/opleidingen/graduaat/programmeren/sint-katelijne-waver/basistraject"}
           title={"studie"}
           text={
             "We kregen een stevige basis als full stack developer in Java en Javascript en frameworks zoals React en Java Spring. " +
@@ -65,3 +66,4 @@ export function MoreInfo() {
     </div>
   );
 }
+

@@ -11,9 +11,14 @@ function ScrollDownSection() {
     }
 
     return (
-        <section id="ScrollDown" className="demo mt-5 pt-5">
-            <button onClick={scroll}><span/>Scroll</button>
-        </section>
+        <section id="ScrollDown" className="demo mt-5 pt-5 text-center">
+        <div className="d-flex justify-content-center pt-5  align-items-center">
+            <button className="button" onClick={scroll}>
+                <span></span>
+                Scroll
+            </button>
+        </div>
+    </section>
     );
 }
 
@@ -76,7 +81,7 @@ export default function LandingPage() {
                 <div className="px-4 py-3 my-3 text-center">
                         <h1 className="display-5 fw-bold text-white">Kristof Moons</h1>
                         <div className="col-lg-6 mx-auto my-5">
-                            <p className=" mb-4 text-white">Ik ben altijd gemotiveerd om iets nieuws bij te leren.
+                            <p className=" mb-4 text-white justify-content-center">Ik ben altijd gemotiveerd om iets nieuws bij te leren.
                                 Bij programmeren
                                 kan je kennis nooit
                                 groot genoeg zijn en is het voor mij een grote uitdaging nieuwe dingen te ontdekken. Dit

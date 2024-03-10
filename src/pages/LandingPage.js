@@ -12,7 +12,7 @@ function ScrollDownSection() {
 
     return (
         <section id="ScrollDown" className="demo mt-5 pt-5 text-center">
-        <div className="d-flex justify-content-center pt-5  align-items-center">
+        <div className="d-flex justify-content-center">
             <button className="button" onClick={scroll}>
                 <span></span>
                 Scroll

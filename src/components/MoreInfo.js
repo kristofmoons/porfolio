@@ -6,28 +6,29 @@ function Info(props) {
   };
 
   return (
-    <div className="col-lg d-flex align-items-start border rounded p-3 mx-2">
-      <div style={{ display: "flex", flexDirection: "column" }}>
+    <div className="col-lg-4 mb-4">
+      <div className="card h-100">
         <div
-          className={"mb-2"}
-          style={{ display: "flex", alignItems: "center", cursor: "pointer" }}
+          className="card-header d-flex align-items-center cursor-pointer"
           onClick={handleRedirect}
         >
           <img
-            src={process.env.PUBLIC_URL + props.logoSrc} 
+            src={process.env.PUBLIC_URL + props.logoSrc}
             alt={props.title + " logo"}
             style={{ height: "50px", width: "auto" }}
           />
-          <h2 style={{ marginLeft: "10px" }}>{props.title}</h2>
+          <h2 className="ms-3 mb-0">{props.title}</h2>
         </div>
-        <p>{props.text}</p>
-        <button class="button-visit" role="button" onClick={handleRedirect}>Bezoek me</button>
-
+        <div className="card-body d-flex flex-column">
+          <p className="flex-grow-1">{props.text}</p>
+          <button className="button-visit" onClick={handleRedirect}>
+            Bezoek me
+          </button>
+        </div>
       </div>
     </div>
   );
 }
-
 export function MoreInfo() {
   return (
     <div className="container px-4 py-5" id="hanging-icons">
@@ -44,7 +45,9 @@ export function MoreInfo() {
         />
         <Info
           logoSrc={"/images/thomasmore.jpg"}
-          link={"https://thomasmore.be/nl/opleidingen/graduaat/programmeren/sint-katelijne-waver/basistraject"}
+          link={
+            "https://thomasmore.be/nl/opleidingen/graduaat/programmeren/sint-katelijne-waver/basistraject"
+          }
           title={"studie"}
           text={
             "We kregen een stevige basis als full stack developer in Java en Javascript en frameworks zoals React en Java Spring. " +
@@ -53,7 +56,7 @@ export function MoreInfo() {
           }
         />
         <Info
-          logoSrc={"/images/linkedinFavi.png"} 
+          logoSrc={"/images/linkedinFavi.png"}
           link={"https://www.linkedin.com/in/kristof-moons/"}
           title={"LinkedIn"}
           text={
@@ -66,4 +69,3 @@ export function MoreInfo() {
     </div>
   );
 }
-
